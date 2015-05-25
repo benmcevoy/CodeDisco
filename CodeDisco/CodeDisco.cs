@@ -36,7 +36,7 @@ namespace CodeDisco
     class CodeDisco : IClassifier
     {
         readonly IClassificationType _classificationType;
-        readonly Router _router = new Router(new Player());
+        readonly Router _router = new Router(new Player(), new Config());
 
         internal CodeDisco(IClassificationTypeRegistryService registry)
         {

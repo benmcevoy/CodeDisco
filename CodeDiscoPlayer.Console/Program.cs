@@ -4,7 +4,7 @@
     {
         static void Main(string[] args)
         {
-            var router = new Router(new Player());
+            var router = new Router(new Player(), new Config());
 
             while (true)
             {

@@ -1,34 +1,44 @@
-﻿using System;
-using System.IO;
-using System.Media;
+﻿using System.IO;
+using Microsoft.Xna.Framework.Audio;
 
 namespace CodeDiscoPlayer
 {
-    public class Player : IDisposable
+    // vlc --sout "#transcode{acodec=s16l,channels=2,samplerate=44100}:std{access=file,mux=wav,dst=OUTPUT}" INPUT
+
+    public class Player
     {
-        private readonly SoundPlayer _soundPlayer = new SoundPlayer();
+        private SoundEffectInstance _loopPlayer;
+        private SoundEffectInstance _soundPlayer;
 
         public void Stop()
         {
             _soundPlayer.Stop();
+            _loopPlayer.Stop();
         }
 
-        public void Play(Stream stream, bool loop)
+        public void Play(Stream stream, Loop loop)
         {
             stream.Position = 0;
 
-            _soundPlayer.Stream = stream;
+            switch (loop)
+            {
+                case Loop.None:
+                    //if (_soundPlayer != null) _soundPlayer.Dispose();
+                    _soundPlayer = SoundEffect.FromStream(stream).CreateInstance();
+                    _soundPlayer.Play();
+                    break;
 
-            if (loop) _soundPlayer.PlayLooping();
-            else {_soundPlayer.Play();}
-        }
+                case Loop.StartLoop:
+                    if(_loopPlayer!=null)_loopPlayer.Dispose();
+                    _loopPlayer = SoundEffect.FromStream(stream).CreateInstance();
+                    _loopPlayer.IsLooped = true;
+                    _loopPlayer.Play();
+                    break;
 
-        private bool _disposing;
-        public void Dispose()
-        {
-            if (_disposing) return;
-            _disposing = true;
-            _soundPlayer.Dispose();
+                case Loop.StopLoop:
+                    if (_loopPlayer != null) _loopPlayer.Stop(false);
+                    break;
+            }
         }
     }
 }

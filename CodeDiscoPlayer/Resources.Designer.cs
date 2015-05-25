@@ -108,27 +108,27 @@ namespace CodeDiscoPlayer {
         /// <summary>
         ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
         /// </summary>
+        internal static System.IO.UnmanagedMemoryStream funky {
+            get {
+                return ResourceManager.GetStream("funky", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream guitar_loop {
+            get {
+                return ResourceManager.GetStream("guitar_loop", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
         internal static System.IO.UnmanagedMemoryStream highhat {
             get {
                 return ResourceManager.GetStream("highhat", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
-        /// </summary>
-        internal static System.IO.UnmanagedMemoryStream looperman_l_0448131_0072104_megapaul_penne_mit_tomatensauce_75bpm_am {
-            get {
-                return ResourceManager.GetStream("looperman_l_0448131_0072104_megapaul_penne_mit_tomatensauce_75bpm_am", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
-        /// </summary>
-        internal static System.IO.UnmanagedMemoryStream rain {
-            get {
-                return ResourceManager.GetStream("rain", resourceCulture);
             }
         }
         
@@ -174,6 +174,15 @@ namespace CodeDiscoPlayer {
         internal static System.IO.UnmanagedMemoryStream slash {
             get {
                 return ResourceManager.GetStream("slash", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream snare {
+            get {
+                return ResourceManager.GetStream("snare", resourceCulture);
             }
         }
         

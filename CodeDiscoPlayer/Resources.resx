@@ -133,14 +133,14 @@
   <data name="fkey" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>samples\fkey.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="funky" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>samples\funky.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="guitar_loop" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>samples\guitar-loop.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="highhat" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>samples\highhat.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="looperman_l_0448131_0072104_megapaul_penne_mit_tomatensauce_75bpm_am" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>samples\looperman-l-0448131-0072104-megapaul-penne-mit-tomatensauce-75bpm-am.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="rain" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>samples\rain.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="rain_01" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>samples\rain-01.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -156,6 +156,9 @@
   </data>
   <data name="slash" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>samples\slash.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="snare" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>samples\snare.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="squareBrackets" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>samples\squarebrackets.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
